@@ -1,0 +1,44 @@
+/* Custom Component Classes */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    border: 1px solid rgba(253, 207, 175, 0.5);
+    box-shadow: 0px 10px 30px rgba(190, 155, 128, 0.1);
+}
+
+/* Base resets complementares se necessário */
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+            scroll-margin-top: 80px;
+        }
+
+        .portfolio-image {
+            transition: transform 500ms ease;
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.04);
+        }
+
+        .testimonial-slide[hidden] {
+            display: none;
+        }
+
+        .carousel-dot[aria-current="true"] {
+            width: 2rem;
+            background: currentColor;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .portfolio-image {
+                transition: none;
+            }
+        }

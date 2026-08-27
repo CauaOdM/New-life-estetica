@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>New Life Estética</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="assets/logo-favicon.png">
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Arquivos Locais -->
+    <link rel="stylesheet" href="style.css">
+    <script src="newlife.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased relative">
+
+    <!-- Cabeçalho Principal -->
+    <header class="sticky top-0 z-50 w-full bg-surface/90 shadow-sm backdrop-blur-md dark:bg-surface-dim/90 dark:shadow-none">
+    <nav class="grid w-full grid-cols-[1fr_auto_1fr] items-center px-4 py-3.5 lg:px-8">
+        
+        <a href="#inicio"
+           class="justify-self-start whitespace-nowrap font-display-lg text-[22px] tracking-tight text-primary lg:text-[24px]">
+            New Life Estética
+        </a>
+
+        <ul class="hidden items-center gap-5 lg:flex xl:gap-8">
+            <li>
+                <a href="#inicio"
+                   class="border-b-2 border-transparent pb-1 font-label-md font-medium text-on-surface-variant transition-colors duration-300 hover:border-primary hover:text-primary">
+                    Início
+                </a>
+            </li>
+
+            <li>
+                <a href="#tratamentos"
+                   class="border-b-2 border-transparent pb-1 font-label-md font-medium text-on-surface-variant transition-colors duration-300 hover:border-primary hover:text-primary">
+                    Tratamentos
+                </a>
+            </li>
+
+            <li>
+                <a href="#portfolio"
+                   class="border-b-2 border-transparent pb-1 font-label-md font-medium text-on-surface-variant transition-colors duration-300 hover:border-primary hover:text-primary">
+                    Portfólio
+                </a>
+            </li>
+
+            <li>
+                <a href="#depoimentos"
+                   class="border-b-2 border-transparent pb-1 font-label-md font-medium text-on-surface-variant transition-colors duration-300 hover:border-primary hover:text-primary">
+                    Depoimentos
+                </a>
+            </li>
+        </ul>
+
+        <a href="https://wa.me/554799801658"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hidden justify-self-end rounded-lg bg-primary-container px-5 py-2.5 font-button text-button text-on-primary transition-colors duration-300 hover:bg-primary lg:inline-flex">
+            Agendar Experiência
+        </a>
+
+        <button id="menu-btn"
+                class="justify-self-end text-primary lg:hidden"
+                aria-expanded="false"
+                aria-controls="menu-mobile"
+                aria-label="Abrir menu">
+            <span class="material-symbols-outlined"
+                  style="font-variation-settings: 'FILL' 1;">
+                menu
+            </span>
+        </button>
+    </nav>
+</header>
+
+    <!-- Botão Flutuante (WhatsApp) -->
+    <aside>
+        <a class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary p-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center" href="https://wa.me/554799801658" target="_blank" aria-label="Fale conosco no WhatsApp">
+            <span class="material-symbols-outlined" style="font-size: 28px;">chat</span>
+        </a>
+    </aside>
+
+    <main>
+        
+        <!-- Seção Hero -->
+        <section id="inicio" class="relative min-h-[90vh] flex items-center bg-surface-container-low overflow-hidden">
+            <figure class="absolute inset-0 z-0 m-0">
+                <div class="bg-cover bg-center w-full h-full opacity-30" style="background-image: url('assets/background.jpg')" aria-hidden="true"></div>
+            </figure>
+            
+            <article class="container mx-auto px-gutter max-w-container-max relative z-10 grid grid-cols-1 md:grid-cols-2 gap-lg items-center py-xl">
+                <header>
+                    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                        Eleve sua <span class="text-primary-container">beleza</span>,<br/>inspire sua <span class="text-primary-container">essência</span>
+                    </h1>
+                    <ul class="space-y-4 mb-8 font-body-lg text-body-lg text-on-surface-variant">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary-container mr-3">favorite</span> Especialistas em harmonização facial e corporal</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary-container mr-3">star</span> Protocolos exclusivos e personalizados</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary-container mr-3">hevc</span> Realçando a sua beleza natural</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary-container mr-3">location_on</span> Referência em Blumenau - SC</li>
+                    </ul>
+                    <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button text-button px-8 py-4 rounded-lg hover:bg-primary transition-colors duration-300 shadow-md" href="https://wa.me/554799801658" target="_blank">
+                        Agendar via WhatsApp
+                        <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+                    </a>
+                </header>
+                
+                <figure class="hidden md:block m-0">
+                    <img class="w-full h-[600px] object-cover rounded-xl shadow-lg border border-outline-variant/30" alt="Mulher recebendo tratamento facial de luxo" src="assets/watermarked_img_13263517955156574373.jpg"/>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Faixa de Estatísticas -->
+        <aside class="bg-surface-variant border-y border-outline-variant/30 py-4">
+            <ul class="container mx-auto max-w-container-max px-gutter flex flex-wrap justify-around items-center text-on-surface-variant font-label-md text-label-md text-center gap-4 m-0 p-0">
+                <li>20+ Anos de Experiência</li>
+                <li class="hidden sm:inline border-l border-outline/30 h-4" aria-hidden="true"></li>
+                <li>Atendimento Personalizado</li>
+                <li class="hidden sm:inline border-l border-outline/30 h-4" aria-hidden="true"></li>
+                <li>Blumenau - SC</li>
+            </ul>
+        </aside>
+
+        <!-- Seção Sobre -->
+        <section class="py-xl bg-background" id="sobre">
+            <div class="container mx-auto px-gutter max-w-container-max">
+                <article class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
+                    <div class="md:col-span-7">
+                        <h2 class="font-headline-md text-headline-md text-on-surface mb-6">Cuidado que vem de família,<br/>resultados que transformam.</h2>
+                        <div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+                            <p>Mais do que uma clínica, um refúgio. A New Life Estética nasceu da paixão compartilhada pelas irmãs Nubia e Nuzi, unindo dedicação e expertise para oferecer um atendimento verdadeiramente acolhedor e seguro.</p>
+                            <p>Com mais de 20 anos de legado em Blumenau, nossa missão é elevar sua autoestima através de tratamentos estéticos de alta performance, sempre respeitando a sua individualidade e realçando a sua essência com a máxima segurança clínica.</p>
+                        </div>
+                        
+                        <aside class="mt-8 p-6 rounded-xl border border-primary-container/30 bg-surface-container-highest inline-block relative overflow-hidden">
+                            <div class="absolute -right-4 -top-4 w-16 h-16 bg-primary-container rounded-full opacity-10"></div>
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Tarde de Autocuidado em Grupo</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Organize um evento privado inesquecível com suas amigas em nosso espaço exclusivo.</p>
+                            <a class="text-primary-container font-button hover:text-primary transition-colors flex items-center" href="https://wa.me/554799801658">Saiba mais <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span></a>
+                        </aside>
+                    </div>
+                    
+                    <figure class="md:col-span-5 relative m-0">
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-lg border border-outline-variant/30 relative">
+                            <img class="w-full h-full object-cover" alt="Irmãs esteticistas na clínica" src="assets/irmas-foto.jpg"/>
+                        </div>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Tratamentos -->
+        <section class="py-xl bg-surface-container-low" id="tratamentos">
+            <header class="container mx-auto px-gutter max-w-container-max text-center mb-12">
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Serviços</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Procedimentos avançados realizados com maestria para revelar a sua melhor versão.</p>
+            </header>
+            
+            <div class="container mx-auto px-gutter max-w-container-max grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <article class="glass-card rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-surface-variant rounded-full flex items-center justify-center text-primary-container mb-4">
+                        <span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">face</span>
+                    </div>
+                    <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Limpeza de Pele</h3>
+                    <p class="font-body-md text-[14px] text-on-surface-variant">Renovação profunda, removendo impurezas para um brilho natural.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="glass-card rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-surface-variant rounded-full flex items-center justify-center text-primary-container mb-4">
+                        <span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">spa</span>
+                    </div>
+                    <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Lifting Facial</h3>
+                    <p class="font-body-md text-[14px] text-on-surface-variant">Rejuvenescimento e firmeza, estimulando o colágeno para um contorno definido.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="glass-card rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-surface-variant rounded-full flex items-center justify-center text-primary-container mb-4">
+                        <span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">health_and_beauty</span>
+                    </div>
+                    <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Toxina Botulínica</h3>
+                    <p class="font-body-md text-[14px] text-on-surface-variant">Suavização de linhas de expressão com naturalidade e precisão médica.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="glass-card rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-surface-variant rounded-full flex items-center justify-center text-primary-container mb-4">
+                        <span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">self_improvement</span>
+                    </div>
+                    <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Massagem Relaxante</h3>
+                    <p class="font-body-md text-[14px] text-on-surface-variant">Alívio de tensões e reconexão profunda com o seu bem-estar físico e mental.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section class="py-xl bg-background" id="portfolio" aria-labelledby="titulo-portfolio">
+            <header class="container mx-auto px-gutter max-w-container-max text-center mb-12">
+                <p class="font-label-md text-label-md uppercase tracking-[0.18em] text-primary-container mb-3">Nosso trabalho</p>
+                <h2 id="titulo-portfolio" class="font-headline-md text-headline-md text-on-surface mb-4">Beleza natural em cada detalhe</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Conheça um pouco da experiência, do cuidado e dos resultados que fazem parte da New Life.</p>
+            </header>
+
+            <ul class="container mx-auto px-gutter max-w-container-max grid grid-cols-1 md:grid-cols-3 gap-6" aria-label="Galeria de trabalhos da New Life Estética">
+                <li>
+                    <figure class="portfolio-item glass-card rounded-xl overflow-hidden h-full">
+                        <span class="block aspect-[4/5] overflow-hidden">
+                            <img class="portfolio-image w-full h-full object-cover" src="assets/watermarked_img_13263517955156574373.jpg" alt="Atendimento facial realizado na New Life Estética" loading="lazy"/>
+                        </span>
+                        <figcaption class="p-6">
+                            <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Rejuvenescimento facial</h3>
+                            <p class="font-body-md text-[14px] text-on-surface-variant">Protocolos personalizados que preservam seus traços e valorizam sua expressão.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="portfolio-item glass-card rounded-xl overflow-hidden h-full">
+                        <span class="block aspect-[4/5] overflow-hidden">
+                            <img class="portfolio-image w-full h-full object-cover" src="assets/background.jpg" alt="Ambiente acolhedor preparado para uma experiência de autocuidado" loading="lazy"/>
+                        </span>
+                        <figcaption class="p-6">
+                            <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Experiência New Life</h3>
+                            <p class="font-body-md text-[14px] text-on-surface-variant">Um espaço pensado para transformar cada visita em um momento de bem-estar.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="portfolio-item glass-card rounded-xl overflow-hidden h-full">
+                        <span class="block aspect-[4/5] overflow-hidden">
+                            <img class="portfolio-image w-full h-full object-cover" src="assets/irmas-foto.jpg" alt="Profissionais da New Life Estética" loading="lazy"/>
+                        </span>
+                        <figcaption class="p-6">
+                            <h3 class="font-headline-sm text-[20px] text-on-surface mb-2">Cuidado personalizado</h3>
+                            <p class="font-body-md text-[14px] text-on-surface-variant">Escuta atenta, técnica e segurança em cada etapa do seu tratamento.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seção Depoimentos -->
+        <section class="py-xl bg-surface-container-low overflow-hidden" id="depoimentos" aria-labelledby="titulo-depoimentos">
+            <header class="container mx-auto px-gutter max-w-container-max text-center mb-10">
+                <p class="font-label-md text-label-md uppercase tracking-[0.18em] text-primary-container mb-3">Quem viveu, recomenda</p>
+                <h2 id="titulo-depoimentos" class="font-headline-md text-headline-md text-on-surface mb-4">Histórias de autoestima e cuidado</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Relatos de clientes que confiaram sua beleza à nossa equipe.</p>
+            </header>
+
+            <article class="container mx-auto px-gutter max-w-3xl" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
+                <p id="carousel-status" class="sr-only" aria-live="polite">Depoimento 1 de 3</p>
+
+                <ol id="testimonial-track">
+                    <li class="testimonial-slide" data-slide="0">
+                        <figure class="glass-card rounded-xl px-6 py-10 md:px-12 text-center">
+                            <span class="material-symbols-outlined text-primary-container text-[36px] mb-5" aria-hidden="true">format_quote</span>
+                            <blockquote class="font-display-lg text-[22px] md:text-[28px] leading-relaxed text-on-surface">
+                                <p>“O atendimento é extremamente acolhedor. Saí me sentindo mais confiante, sem perder a naturalidade que eu tanto queria.”</p>
+                            </blockquote>
+                            <figcaption class="mt-6 font-label-md text-label-md text-primary">Mariana S. <span class="block mt-1 font-body-md text-[13px] text-on-surface-variant">Cliente New Life</span></figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial-slide" data-slide="1" hidden>
+                        <figure class="glass-card rounded-xl px-6 py-10 md:px-12 text-center">
+                            <span class="material-symbols-outlined text-primary-container text-[36px] mb-5" aria-hidden="true">format_quote</span>
+                            <blockquote class="font-display-lg text-[22px] md:text-[28px] leading-relaxed text-on-surface">
+                                <p>“Cada detalhe transmite cuidado. A equipe explicou todo o procedimento e o resultado ficou delicado e lindo.”</p>
+                            </blockquote>
+                            <figcaption class="mt-6 font-label-md text-label-md text-primary">Camila R. <span class="block mt-1 font-body-md text-[13px] text-on-surface-variant">Cliente New Life</span></figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial-slide" data-slide="2" hidden>
+                        <figure class="glass-card rounded-xl px-6 py-10 md:px-12 text-center">
+                            <span class="material-symbols-outlined text-primary-container text-[36px] mb-5" aria-hidden="true">format_quote</span>
+                            <blockquote class="font-display-lg text-[22px] md:text-[28px] leading-relaxed text-on-surface">
+                                <p>“Encontrei um lugar em que técnica e carinho caminham juntos. Minha experiência foi tranquila do início ao fim.”</p>
+                            </blockquote>
+                            <figcaption class="mt-6 font-label-md text-label-md text-primary">Patrícia L. <span class="block mt-1 font-body-md text-[13px] text-on-surface-variant">Cliente New Life</span></figcaption>
+                        </figure>
+                    </li>
+                </ol>
+
+                <nav class="mt-7 flex items-center justify-center gap-5" aria-label="Controles dos depoimentos">
+                    <button id="testimonial-prev" class="w-11 h-11 rounded-full border border-primary-container/40 text-primary hover:bg-primary hover:text-on-primary transition-colors inline-flex items-center justify-center" type="button" aria-label="Depoimento anterior">
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+                    </button>
+
+                    <ol class="flex items-center gap-2" aria-label="Escolher depoimento">
+                        <li><button class="carousel-dot h-2 w-2 rounded-full bg-primary-container text-primary-container transition-all" type="button" data-slide-to="0" aria-label="Exibir depoimento 1" aria-current="true"></button></li>
+                        <li><button class="carousel-dot h-2 w-2 rounded-full bg-outline-variant text-primary-container transition-all" type="button" data-slide-to="1" aria-label="Exibir depoimento 2" aria-current="false"></button></li>
+                        <li><button class="carousel-dot h-2 w-2 rounded-full bg-outline-variant text-primary-container transition-all" type="button" data-slide-to="2" aria-label="Exibir depoimento 3" aria-current="false"></button></li>
+                    </ol>
+
+                    <button id="testimonial-next" class="w-11 h-11 rounded-full border border-primary-container/40 text-primary hover:bg-primary hover:text-on-primary transition-colors inline-flex items-center justify-center" type="button" aria-label="Próximo depoimento">
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                    </button>
+                </nav>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="w-full py-xl bg-surface-container-low dark:bg-surface-container border-t border-outline-variant/30 flat no shadows">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-md px-gutter max-w-container-max mx-auto">
+            
+            <article class="flex flex-col space-y-4">
+                <span class="font-display-lg text-primary text-[20px]">New Life Estética</span>
+                <p class="font-body-md text-body-md text-on-surface-variant">Elevando sua beleza, inspirando sua essência com cuidado e excelência.</p>
+            </article>
+
+            <address class="flex flex-col space-y-4 not-italic">
+                <h4 class="font-label-md text-label-md text-primary font-semibold">Contato & Localização</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                    <p class="flex items-center"><span class="material-symbols-outlined mr-2 text-primary-container" style="font-size: 18px;">location_on</span> Rua Hermann Tribess, 2377 - Tribess, Blumenau</p>
+                    <p class="flex items-center"><span class="material-symbols-outlined mr-2 text-primary-container" style="font-size: 18px;">phone</span> (47) 9980-1658</p>
+                    <a class="text-on-surface-variant hover:text-primary-container transition-colors flex items-center mt-2" href="https://maps.app.goo.gl/m6XkTrPxAhjScbc9A" target="_blank">
+                        <span class="material-symbols-outlined mr-2 text-primary-container" style="font-size: 18px;">map</span> Ver no Google Maps
+                    </a>
+                </div>
+            </address>
+
+            <nav class="flex flex-col space-y-4 md:items-end">
+                <h4 class="font-label-md text-label-md text-primary font-semibold">Siga-nos</h4>
+                <div class="flex flex-col space-y-2 md:items-end font-label-md text-label-md">
+                    <a class="text-on-surface-variant hover:text-primary-container transition-colors flex items-center" href="https://www.instagram.com/estetica_newlife/" target="_blank"><span class="material-symbols-outlined mr-2 text-sm md:hidden">arrow_right</span> Instagram</a>
+                    <a class="text-on-surface-variant hover:text-primary-container transition-colors flex items-center" href="https://www.facebook.com/newlifebnu" target="_blank"><span class="material-symbols-outlined mr-2 text-sm md:hidden">arrow_right</span> Facebook</a>
+                </div>
+            </nav>
+            
+        </div>
+        
+        <div class="px-gutter max-w-container-max mx-auto mt-12 pt-6 border-t border-outline-variant/30 text-center font-body-md text-[12px] text-on-surface-variant">
+            © 2026 New Life Estética. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
